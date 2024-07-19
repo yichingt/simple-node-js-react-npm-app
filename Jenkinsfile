@@ -8,7 +8,7 @@ pipeline {
                 }
             }
         }
-        /*stage('Dependency-Check') {
+        stage('Dependency-Check') {
             steps {
                 dependencyCheck additionalArguments: '''
                     -o './'
@@ -20,7 +20,7 @@ pipeline {
                 
                 dependencyCheckPublisher pattern: 'dependency-check-report.xml'
             }
-        }*/
+        }
     }
 }
 
